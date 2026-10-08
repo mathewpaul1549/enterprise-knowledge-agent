@@ -1,0 +1,82 @@
+[
+  {
+    "query": "API rate limit",
+    "expected_document": "rate-limits"
+  },
+  {
+    "query": "429 Retry-After header",
+    "expected_document": "rate-limits"
+  },
+  {
+    "query": "503 service unavailable retry",
+    "expected_document": "rate-limits"
+  },
+  {
+    "query": "idempotency key create operation",
+    "expected_document": "rate-limits"
+  },
+  {
+    "query": "API authentication bearer token",
+    "expected_document": "api-auth"
+  },
+  {
+    "query": "rotate API tokens",
+    "expected_document": "api-auth"
+  },
+  {
+    "query": "401 authentication error",
+    "expected_document": "api-auth"
+  },
+  {
+    "query": "Webhook signatures HMAC",
+    "expected_document": "webhooks"
+  },
+  {
+    "query": "Webhook retries minutes",
+    "expected_document": "webhooks"
+  },
+  {
+    "query": "event_id deduplicate webhook",
+    "expected_document": "webhooks"
+  },
+  {
+    "query": "data export formats",
+    "expected_document": "data-export"
+  },
+  {
+    "query": "export jobs expire",
+    "expected_document": "data-export"
+  },
+  {
+    "query": "deletion cancellation window",
+    "expected_document": "data-export"
+  },
+  {
+    "query": "confirm deletion administrator",
+    "expected_document": "data-export"
+  },
+  {
+    "query": "quantum encryption pricing",
+    "expected_document": null
+  },
+  {
+    "query": "annual enterprise subscription cost",
+    "expected_document": null
+  },
+  {
+    "query": "SOC2 certification audit report",
+    "expected_document": null
+  },
+  {
+    "query": "internal incident escalation code",
+    "expected_document": null
+  },
+  {
+    "query": "service reliability guarantee SLA",
+    "expected_document": null
+  },
+  {
+    "query": "HIPAA business associate agreement",
+    "expected_document": null
+  }
+]

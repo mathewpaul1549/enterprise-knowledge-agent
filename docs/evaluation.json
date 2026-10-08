@@ -1,0 +1,184 @@
+{
+  "run_utc": "2026-10-08T12:08:55.536821+00:00",
+  "python": "3.14.6",
+  "method": "BM25 lexical retrieval + extractive quotes; no model calls",
+  "dataset": "20 authored questions against 6 synthetic documents, Acme support identity; no held-out data",
+  "answerable_recall_at_3": 1.0,
+  "unanswerable_abstention_accuracy": 1.0,
+  "p50_ms": 0.539,
+  "p95_ms": 0.669,
+  "cases": [
+    {
+      "query": "API rate limit",
+      "expected_document": "rate-limits",
+      "retrieved": [
+        "rate-limits"
+      ],
+      "status": "answered",
+      "correct": true
+    },
+    {
+      "query": "429 Retry-After header",
+      "expected_document": "rate-limits",
+      "retrieved": [
+        "rate-limits"
+      ],
+      "status": "answered",
+      "correct": true
+    },
+    {
+      "query": "503 service unavailable retry",
+      "expected_document": "rate-limits",
+      "retrieved": [
+        "rate-limits"
+      ],
+      "status": "answered",
+      "correct": true
+    },
+    {
+      "query": "idempotency key create operation",
+      "expected_document": "rate-limits",
+      "retrieved": [
+        "rate-limits"
+      ],
+      "status": "answered",
+      "correct": true
+    },
+    {
+      "query": "API authentication bearer token",
+      "expected_document": "api-auth",
+      "retrieved": [
+        "api-auth",
+        "api-auth"
+      ],
+      "status": "answered",
+      "correct": true
+    },
+    {
+      "query": "rotate API tokens",
+      "expected_document": "api-auth",
+      "retrieved": [
+        "api-auth"
+      ],
+      "status": "answered",
+      "correct": true
+    },
+    {
+      "query": "401 authentication error",
+      "expected_document": "api-auth",
+      "retrieved": [
+        "api-auth"
+      ],
+      "status": "answered",
+      "correct": true
+    },
+    {
+      "query": "Webhook signatures HMAC",
+      "expected_document": "webhooks",
+      "retrieved": [
+        "webhooks"
+      ],
+      "status": "answered",
+      "correct": true
+    },
+    {
+      "query": "Webhook retries minutes",
+      "expected_document": "webhooks",
+      "retrieved": [
+        "webhooks",
+        "webhooks"
+      ],
+      "status": "answered",
+      "correct": true
+    },
+    {
+      "query": "event_id deduplicate webhook",
+      "expected_document": "webhooks",
+      "retrieved": [
+        "webhooks"
+      ],
+      "status": "answered",
+      "correct": true
+    },
+    {
+      "query": "data export formats",
+      "expected_document": "data-export",
+      "retrieved": [
+        "data-export",
+        "data-export"
+      ],
+      "status": "answered",
+      "correct": true
+    },
+    {
+      "query": "export jobs expire",
+      "expected_document": "data-export",
+      "retrieved": [
+        "data-export"
+      ],
+      "status": "answered",
+      "correct": true
+    },
+    {
+      "query": "deletion cancellation window",
+      "expected_document": "data-export",
+      "retrieved": [
+        "data-export"
+      ],
+      "status": "answered",
+      "correct": true
+    },
+    {
+      "query": "confirm deletion administrator",
+      "expected_document": "data-export",
+      "retrieved": [
+        "data-export"
+      ],
+      "status": "answered",
+      "correct": true
+    },
+    {
+      "query": "quantum encryption pricing",
+      "expected_document": null,
+      "retrieved": [],
+      "status": "abstained",
+      "correct": true
+    },
+    {
+      "query": "annual enterprise subscription cost",
+      "expected_document": null,
+      "retrieved": [],
+      "status": "abstained",
+      "correct": true
+    },
+    {
+      "query": "SOC2 certification audit report",
+      "expected_document": null,
+      "retrieved": [],
+      "status": "abstained",
+      "correct": true
+    },
+    {
+      "query": "internal incident escalation code",
+      "expected_document": null,
+      "retrieved": [],
+      "status": "abstained",
+      "correct": true
+    },
+    {
+      "query": "service reliability guarantee SLA",
+      "expected_document": null,
+      "retrieved": [],
+      "status": "abstained",
+      "correct": true
+    },
+    {
+      "query": "HIPAA business associate agreement",
+      "expected_document": null,
+      "retrieved": [],
+      "status": "abstained",
+      "correct": true
+    }
+  ],
+  "limitations": "Small regression set. Exact quoted passages are not a human-graded measure of answer helpfulness. Paraphrase/semantic recall and live Eve model grounding remain unmeasured."
+}

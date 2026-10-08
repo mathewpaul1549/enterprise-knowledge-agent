@@ -22,10 +22,15 @@
   },
   "devDependencies": {
     "@types/node": "24.x",
+    "just-bash": "3.6.0",
     "typescript": "7.0.2"
   },
   "engines": {
     "node": "24.x"
+  },
+  "overrides": {
+    "guarded-fetch": {
+      "undici": "7.29.1"
+    }
   }
-
 }
